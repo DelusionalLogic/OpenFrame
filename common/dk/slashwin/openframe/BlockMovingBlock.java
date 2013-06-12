@@ -36,7 +36,7 @@ public class BlockMovingBlock extends BlockContainer
     @Override
     public boolean isOpaqueCube()
     {
-        return false;
+        return true;
     }
 
     @Override
@@ -56,6 +56,6 @@ public class BlockMovingBlock extends BlockContainer
 
     public void registerIcons(IconRegister par1IconRegister)
     {
-        this.blockIcon = par1IconRegister.registerIcon("piston_top");
+        this.blockIcon = par1IconRegister.registerIcon("openFrame:frame");
     }
 }

@@ -47,6 +47,9 @@ public class TileMovingBlock extends TileEntity
     {
         this.storedBlockID = blockID;
         this.storedMetadata = metaData;
+
+	    worldObj.setBlockMetadataWithNotify(xCoord, yCoord, zCoord, metaData, 3);
+	    worldObj.markBlockForRenderUpdate(xCoord, yCoord, zCoord);
     }
 
     public void setMoveDirection(ForgeDirection direction)

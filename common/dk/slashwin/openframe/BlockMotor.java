@@ -87,8 +87,6 @@ public class BlockMotor extends BlockContainer
         else
             tileMotor.setTopSide(side);
 
-        entityPlayer.addChatMessage("Orientation: " + tileMotor.getOrientation());
-
         world.markBlockForUpdate(x, y, z);
         return true;
     }
@@ -215,7 +213,6 @@ public class BlockMotor extends BlockContainer
             ((TileMovingBlock) tileEntity).setBlockData(oldBlockID, oldMetadata);
             ((TileMovingBlock) tileEntity).setMoveDirection(pushDirection);
         }
-        world.markBlockForUpdate(newX , newY, newZ);
         return true;
     }
 }
