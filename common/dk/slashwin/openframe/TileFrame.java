@@ -35,8 +35,6 @@ public class TileFrame extends TileEntity
 
     public LinkedHashSet<CoordTuple> getNeighbors(LinkedHashSet<CoordTuple> checked)
     {
-	    int meta = worldObj.getBlockMetadata(xCoord, yCoord, zCoord);
-
         for(ForgeDirection direction : ForgeDirection.VALID_DIRECTIONS)
         {
             if(!getSide(direction.ordinal()))

@@ -36,7 +36,7 @@ public class BlockMovingBlock extends BlockContainer
     @Override
     public boolean isOpaqueCube()
     {
-        return true;
+        return false;
     }
 
     @Override

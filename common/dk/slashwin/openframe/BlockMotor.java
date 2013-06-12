@@ -203,7 +203,7 @@ public class BlockMotor extends BlockContainer
         if(!canPushBlock(world, blockX, blockY, blockZ, pushDirection))
             return false;
 
-        world.setBlock(blockX, blockY, blockZ, 0);
+	    world.setBlock(blockX, blockY, blockZ, 0, 0, 2);
         world.setBlock(newX, newY, newZ, BlockIDs.movingID);
         TileEntity tileEntity = world.getBlockTileEntity(newX, newY, newZ);
         if(tileEntity instanceof TileMovingBlock)
